@@ -1,0 +1,634 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Img -->
+<body>
+  <div class="section">
+    <header class="header">
+      <div class="overlay" style="display: flex; justify-content: center; align-items: center;">
+   <h1 class="herotext text-center text-white fw-bold" style="justify-content: center; align-items: center; font-size: large; display: flex;">ENJOY YOUR WONDERFUL HOLIDAYS WITH A GREAT LUXURY <span class="hotels" style="margin-left: 5px;"> EXPERIENCE!</span></h1>
+   <h2 class="secondtext text-white justify-content-center align-items-center d-flex">The Most Relaxing Place</h2>
+   <div class="buttons ms-4" style="display: flex; justify-content: center; align-items: center;">
+    <a href="#" class="btn1 me-2">TAKE A TOUR</a>
+    <a href="#" class="btn2">LEARN MORE</a>
+   </div>
+  
+  
+   <!-- Available Box -->
+  <div class="available">
+    <div class="box">
+      <h6 class="text-center" style="margin-top: 40px; font-size: small;">
+        CHECK-IN
+      </h6>
+    </div>
+    <div class="box">
+      <h6 class="text-center" style="margin-top: 40px; font-size: small;">
+        CHECK-OUT
+      </h6>
+    </div>
+    <div class="box">
+      <h6 class="text-center" style="margin-top: 40px; font-size: small;">
+        ROOM
+      </h6>
+    </div>
+    <div class="box">
+      <h6 class="text-center" style="margin-top: 40px; font-size: small;">
+        GUESTS
+      </h6>
+    </div>
+    <div class="box">
+      <h6 class="text-center" style="margin-top: 40px;">
+        CHECK AVAILABILITY
+      </h6>
+    </div>
+   </div>
+  </div>
+  </header>
+  </div>
+
+  
+  
+
+  
+  
+  <!-- About Section -->
+  <section class="about" data-aos="fade-right" style="padding: 0; margin: 0; margin-top: 6rem">
+    <div class="row">
+      <div class="col-md-6" style="padding: 0rem 4rem">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="family-pic">
+              <img src="/static/images/smallpic2.png" class="img-fluid" alt="" />
+            </div>
+  
+            <div class="about-container mt-1">
+              <div
+                class="star"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="{% static '/images/special offers.png' %}"
+                  class="img-fluid mt-3"
+                  style="justify-content: center; align-items: center"
+                  alt=""
+                />
+              </div>
+  
+              <h6 style="text-align: center">Special Offers</h6>
+  
+              <div class="innertext text-center justify-content-center pb-4">
+                We Offer One of the best Hotel Services In The World
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="about-main">
+                <div class="innermain-about">
+                  <div class="row flex-column-reverse flex-md-row">
+                    <div
+                      class="about-container justify-content-center"
+                      style="height: 200px; width: 500px"
+                    >
+                      <div
+                        class="pillow"
+                        style="display: flex; justify-content: center"
+                      >
+                        <img
+                          src="{% static '/images/pillow.png' %}"
+                          class="img-fluid mb-2 pt-2 mt-3"
+                          alt=""
+                        />
+                      </div>
+                      <div class="innermain-about2">
+                        <h6 class="mt-2" style="text-align: center">
+                          Cozy Rooms
+                        </h6>
+  
+                        <div class="innertext text-center justify-content-center">
+                          Some Of the Best Rooms Money Can Get You
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="innermain-about2">
+                      <img
+                        src="/static/images/smallpic.png"
+                        class="img-fluid mt-3"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6 py-3" style="padding: 4rem 3rem; margin-top: 5rem">
+        <h4 style="color: #ac7d30" class="fw-bold">ABOUT US</h4>
+        <h2 class="agency">
+          Luxry Hotels<br />
+          Booking Agency
+        </h2>
+        <p class="py-2" style="font-size: medium; color: #666">
+          Far far away, behind the word mountains, far from the countries Vokalia
+          and Consonantia, there live the blind texts. Separated they live in
+          Bookmarksgrove right at the coast of the Semantics, a large language
+          ocean.
+        </p>
+        <a href="#" class="btn3">BOOK NOW</a>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <!-- services -->
+  <section style="padding-top: 1rem;">
+  <h4 class="text-center fw-bold" style="color: #AC7D30; font-size: 1.4rem;">LUXRY SERVICES</h4>
+  <h2 class="text-center" style="font-size: 2.6em; font-family: 'Noto Serif Telugu', serif;">Explore Our Hotel <br> Services</h2>
+  
+  
+  <div class="services mt-4">
+    <div class="service-boxes">
+      <div class="services-circle">
+        <div class="wifi mt-3">
+          <i class="fa fa-wifi" aria-hidden="true"></i>
+        </div>
+  
+      </div>
+      <h4>
+        <div class="circle-text text-center justify-content-center d-flex align-items-center">
+          Free Wifi
+        </div>
+      </h4>
+    </div>
+  
+  
+    <div class="service-boxes">
+      <div class="services-circle">
+        <div class="food mt-3">
+          <i class="fa fa-cutlery" aria-hidden="true"></i>
+        </div>
+      </div>
+      <h4>
+        <div class="circle-text text-center justify-content-center d-flex align-items-center">
+         Resturant
+        </div>
+      </h4>
+    </div>
+  
+  
+    <div class="service-boxes">
+      <div class="services-circle">
+        <div class="car mt-3">
+          <i class="fa fa-car" aria-hidden="true"></i>
+        </div>
+      </div>
+      <h4>
+        <div class="circle-text text-center justify-content-center d-flex align-items-center">
+          Transfer Services
+        </div>
+      </h4>
+      
+    </div>
+  
+  
+    <div class="service-boxes">
+      <div class="services-circle">
+        <div class="room mt-3">
+          <i class="fa fa-bed" aria-hidden="true"></i>
+        </div>
+      </div>
+      <h4>
+        <div class="circle-text text-center justify-content-center d-flex align-items-center">
+          Luxry Rooms
+        </div>
+      </h4>
+      
+    </div>
+  
+  
+  
+    <div class="service-boxes">
+      <div class="services-circle">
+        <div class="cards mt-3">
+          <i class="fa fa-credit-card" aria-hidden="true"></i>
+        </div>
+      </div>
+      <h4>
+        <div class="circle-text text-center justify-content-center d-flex align-items-center">
+          Accepts Credit Cards
+        </div>
+      </h4>
+    
+    </div>
+  </div>
+  </section>
+  
+  <section class="mainn">
+    <div class="background">
+      <div class="overlay2 ">
+        <div class="overbox d-flex" style="justify-content: space-around;">
+  
+          <div class="nbox" style="margin-right: 6.5em;">
+            <h1 class="backgroundtext fw-bold mt-4">THE BEST HOTEL AROUND YOU</h1>
+            <h1 class="backgroundtext2 text-white mt-4">Find the Best Hotel For  <br> Your Next Vacation</h1>
+          </div>
+  
+          <div style="padding-top: 6rem;">
+            <a href="#" class="btn3 me-2 fw-bold">BOOK NOW</a>
+          </div>
+  
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  <section class="mainn">
+    <h4 class="text-center fw-bold" style="color: #AC7D30; font-size: 1.4rem;">OUR ROOMS</h4>
+    <h2 class="text-center" style="font-size: 2.9em; font-family: 'Noto Serif Telugu', serif;">Featured Rooms</h2>
+  
+    <div class="container my-5">
+      <div class="row">
+        {% for room in rooms %}
+                <div class="col-sm-12 col-md-4 my-2">
+                <div class="card mt-4" style="width: 21rem; background-color: white; border-radius: 10px;" >
+                  <img src="{{ room.room_image.url }}" class="card-img-top" alt="..." style="height: 14rem;">
+                    <h5 class="card-header bg-white  text-center pt-3 fs-4">{{ room.hotel_type |upper}}</h5>
+                    <div class="stars pt-2">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                   </div>
+                   <div class="text-center d-flex justify-content-center pb-1">$<h2>{{room.price}}</h2><p>/Night</p></div>
+                   <p class="text-center">Adults: {{room.Adults}}</p>
+                  <div class="text">
+                     <!-- <p class="text-center">Categories: {{room.categories}}</p> -->
+                  </div>
+                  <div>
+                    <div class="ms-5 py-1 d-flex">
+                      <div class="check">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                    <p class="fw-bold ps-3 text-black">{{room.additional_offer}}</p>
+                    </div>
+
+                    <div class="ms-5 py-0 d-flex">
+                      <div class="check">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                    <p class="fw-bold ps-3 text-black">Breakfast Included</p>
+                    </div>
+                  </div>
+                  <div class="buttons mb-3" style="display: flex; justify-content: center; align-items: center;">
+                    <a href="{% url 'luxry-details' room.id %}" class="btn4 me-3">More Details</a>
+                    <button href="#" class="btn5">Book Now</button>
+                   </div>
+               </div>
+            </div>
+          {% endfor %}
+      </div>
+  
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <section>
+    <h4 class="text-center fw-bold" style="color: #AC7D30; font-size: 1.4rem;">RESTO & BAR</h4>
+    <h2 class="text-center" style="font-size: 2.9em; font-family: 'Noto Serif Telugu', serif;">Resturant & Bar</h2>
+
+
+
+    <div class="resturant">
+        <div class="Main">
+          <ul>
+            <li>
+              <a href="#" class="fw-bold"><span><i class="fa fa-cutlery" aria-hidden="true"></i></span> Main</a>
+            </li>
+          </ul>
+        </div>
+        <div class="Dessert">
+          <ul>
+            <li>
+              <a href="#Booking" class="fw-bold"><span><i class="fa-solid fa-martini-glass"></i></span> Dessert</a>
+            </li>
+          </ul>
+        </div>
+        <div class="Drinks">
+          <ul>
+            <li>
+              <a href="#" class="fw-bold"><i class="fa fa-beer" aria-hidden="true"></i> Drinks</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="temporarybox">
+      
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+  <section class="mainn reviews" style="margin-top: 30px;">
+    <!-- Testimonial Header -->
+    <h4 class="text-center fw-bold" style="color: #AC7D30; font-size: 1.4rem;">
+      TESTIMONIAL
+    </h4>
+    <h2 class="text-center" style="font-size: 2.9em; font-family: 'Noto Serif Telugu', serif;">Happy Guests</h2>
+
+    <!-- Guests Carousel -->
+<center>
+  <!-- <div class="container"> -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+            <img src="{% static '/images/pic-1.png' %}" class="" style="border-radius: 50%; height: 10em;width: 10em;" alt="">
+            <h3 class="pt-4 fw-bold" style="font-size: 1.5rem;">Mike Franklyn</h3>
+            <div class="comments">
+              "I had a wonderful experience at this hotel. The staff was incredibly welcoming and accommodating throughout my stay. They were always ready to assist me with any request and made me feel like a valued guest. Their exceptional service truly made my trip memorable."
+            </div>
+            <div class="star">
+              <i class="fa-sharp fa-solid fa-star"></i>
+              <i class="fa-sharp fa-solid fa-star"></i>
+              <i class="fa-sharp fa-solid fa-star"></i>
+              <i class="fa-sharp fa-solid fa-star"></i>
+              <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+      
+        </div>
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="{% static '/images/pic-2.png' %}" class="" style="border-radius: 50%; height: 10em;width: 10em;" alt="">
+          <h3 class="pt-4" style="font-size: 1.5rem;">Annabel Jessica</h3>
+          <div class="comments">
+            "I thoroughly enjoyed my stay at this hotel. The room was immaculate, and the bed was incredibly comfortable. The attention to detail in the room's design and furnishings was impressive. It was evident that the hotel takes great pride in maintaining high standards of cleanliness and comfort."
+          </div>
+        <div class="star">
+          <i class="fa-sharp fa-solid fa-star"></i>
+          <i class="fa-sharp fa-solid fa-star"></i>
+          <i class="fa-sharp fa-solid fa-star"></i>
+          <i class="fa-sharp fa-solid fa-star"></i>
+          <i class="fa-sharp fa-solid fa-star"></i>
+      </div>
+        </div>
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="{% static '/images/pic-3.png' %}" class="" style="border-radius: 50%; height: 10em;width: 10em;" alt="">
+          <h3 class="pt-4" style="font-size: 1.5rem;">Joe Paul</h3>
+          <div class="comments">
+            "I couldn't have chosen a better hotel for my trip. The location was ideal, with easy access to major landmarks and public transportation. Additionally, the hotel's amenities were outstanding. I loved starting my day with a workout in their state-of-the-art fitness center and unwinding by the pool in the evenings. It made my stay both convenient and enjoyable."
+          </div>
+          <div class="star">
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- </div> -->
+</center>
+
+
+  </section>
+
+
+
+
+    <!-- Counter -->
+  <section class="counter-box mt-3">
+    <div class="counter">
+      <div class="nums">
+        <!-- Happy Guests  -->
+        <div class="guests">
+          <i class="fa-solid fa-users" style="color: #AC7D30"></i>
+          <div style="display: flex;">
+            <h3 class="num text-white" data-goal="2100">0</h3> 
+          <span style="color: #c8c8c8;"></span>
+          </div>
+          <p style="color: #c8c8c8;"># of Happy Guests</p>
+        </div>
+
+        <!-- Rooms  -->
+        <div class="rooms">
+          <i class="fa fa-bed" aria-hidden="true" style="color: #AC7D30"></i>
+          <h3 class="num text-white" data-goal="320">0</h3>
+          <p style="color: #c8c8c8;" style="text-align: center;"># of Rooms </p>
+        </div>
+        
+
+        <!-- User  -->
+        <div class="user">
+          <i class="fa-solid fa-user" style="color: #AC7D30"></i>
+          <h3 class="num text-white" data-goal="1000">0</h3>
+          <p class="mx-auto" style="color: #c8c8c8;"># of Staffs</p>
+        </div>
+        
+
+        
+        <!-- Loation Icon  -->
+        <div class="location">
+          <i class="fa-solid fa-location-dot" style="color: #AC7D30"></i>
+          <h3 class="num text-white" data-goal="587">0</h3>
+          <p style="color: #c8c8c8;"># of destinations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  
+  <!-- Blog  -->
+  <section class="mainn">
+    <h4 class="text-center fw-bold" style="color: #AC7D30; font-size: 1.4rem;">
+      OUR BLOG
+    </h4>
+    <h2 class="text-center" style="font-size: 2.9em; font-family: 'Noto Serif Telugu', serif;">Recent Blog</h2>
+
+    <div class="container-fluid">
+      {% for blogs in blog %}
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card mt-4 p-4" style="width: 21rem; background-color: white;" >
+            <img src="{{ blog.blog_image.url }}" class="card-img-top" alt="..." style="height: 14rem;">
+              <h5 class="card-header text-black text-center pt-3 fs-4">{{ blog.blog_title |upper}}</h5>
+              <h1 class="mt-4 text-success">{{ blogs.blog_text }}</h1>
+        </div>
+      </div>
+
+      {% endfor %}
+
+      <div class="emptyspace3">
+        
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+
+<section class="mainn">
+  <h4 class="text-center fw-bold" style="color: #AC7D30; font-size: 1.4rem;">
+    OUR GALLERY
+  </h4>
+  <h2 class="text-center" style="font-size: 2.9em; font-family: 'Noto Serif Telugu', serif;">Gallery</h2>
+
+  <div class="gallery">
+    <div class="gallery-container">
+      <div class="image"><img class="img-fluid" src="{% static '/images/gallery1.jpg' %}" alt=""></div>
+      <div class="image"><img class="img-fluid" src="{% static '/images/gallery2.jpg' %}" alt=""></div>
+      <div class="image"><img class="img-fluid" src="{% static '/images/gallery3.jpg' %}" alt=""></div>
+      <div class="image"><img class="img-fluid" src="{% static '/images/gallery4.jpg' %}" alt=""></div>
+    </div>
+
+   <!-- Popup -->
+   <div class="popup">
+       <!-- Top bar -->
+     <div class="top-bar">
+      {% comment %} <p class="image-name"></p>
+      <span class="close-btn"></span> {% endcomment %}
+    </div>
+
+    <!--arrows -->
+    <button class="arrow-btn left-arrow">  </button>
+
+
+
+
+
+    
+    
+  
+  </div>
+
+  
+   
+
+
+
+  </div>
+
+  <div class="viewmore">
+    <a href="{% url 'luxry-gallery' %}" class="btn6">View More</a>
+  </div>
+
+</section>
+
+
+<footer class="text-white pt-5 pb-4 mt-4" style="background-color: #1A1A1A;">
+  <div class="container text-center text-md-left">
+    <div class="row text-center">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+         <h5 class="hotels text-uppercase mb-4 font-weight-bold fs-4" style="color: #FFFFFF;">Luxry <div class="hotels">HOTEL BOOKINGS</div></h5>
+         <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui consequuntur, fugit eum eveniet odit inventore earum. Culpa, eveniet expedita.</p>
+      </div>
+
+      <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #FFFFFF;">Services</h5>
+        <p>
+          <a href="#" style="text-decoration: none; color: #b7b7b7;" ><i class="fa-solid fa-chevron-right" style="font-size: 1.13em;"></i> Free Wifi</a>
+        </p>
+        <p>
+          <a href="#" style="text-decoration: none; color: #b7b7b7;"><i class="fa-solid fa-chevron-right" style="font-size: 1.13em;"></i> Easy Bookings</a>
+        </p>
+        <p>
+          <a href="#" style="text-decoration: none; color: #b7b7b7;"><i class="fa-solid fa-chevron-right" style="font-size: 1.13em;"></i> Resturant</a>
+        </p>
+        <p>
+          <a href="#" style="text-decoration: none; color: #b7b7b7;"><i class="fa-solid fa-chevron-right" style="font-size: 1.13em;"></i> Swimming Pool</a>
+        </p>
+
+      </div>
+
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #FFFFFF;">Quick Links</h5>
+        <p>
+          <a href="{% url 'luxry-room' %}"  style="text-decoration: none; color: #b7b7b7;"><i class="fa-solid fa-chevron-right" style="font-size: 1.13em;"></i> Home</a>
+        </p>
+        <p>
+          <a href="{% url 'luxry-about' %}"  style="text-decoration: none; color: #b7b7b7;"><i class="fa-solid fa-chevron-right" style="font-size: 1.13em;"></i> About</a>
+        </p>
+        <p>
+          <a href="#" style="text-decoration: none; color: #b7b7b7;"><i class="fa-solid fa-chevron-right" style="font-size: 1.13em;"></i> Gallery</a>
+        </p>
+        <p>
+          <a href="#" style="text-decoration: none; color: #b7b7b7;"><i class="fa-solid fa-chevron-right" style="font-size: 1.13em;"></i> Resto & Bar</a>
+        </p>
+
+
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #FFFFFF;">Have a Question ?</h5>
+        <p>
+          <i class="fas fa-location-dot mr-3" style="color: #C5A880;"></i> Lagos, NIgeria
+        </p>
+        <p>
+          <i class="fas fa-envelope mr-3" style="color: #C5A880;"></i> LexTech@gmail.com
+        </p>
+        <p>
+          <i class="fas fa-phone mr-3" style="color: #C5A880;"></i> +234 706 469 3930
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <hr style="width: auto;">
+
+  <div class="footer-down text-center">
+    Copyright ©2023 LEX TECH
+  </div>
+</footer>
+
+
+
+
+
+  
+  
+  
+  {% endblock %}
+</body>

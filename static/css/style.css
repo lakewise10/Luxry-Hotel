@@ -1,0 +1,701 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+:root {
+  --blue: #00b8b8;
+  --black: #333;
+  --white: #fff;
+  --light-color: #666;
+  --light-bg: #eee;
+  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --brown: #ac7d30;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  text-transform: capitalize;
+}
+html {
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+*::-webkit-scrollbar {
+  height: 0.1rem;
+  width: 0.7rem;
+}
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--brown);
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--brown);
+  margin: auto;
+  display: block;
+}
+nav ul li a:hover::after {
+  width: 100%;
+  transition: width 0.3s linear;
+}
+nav ul li a {
+  cursor: pointer;
+}
+header {
+  background: url(../images/hero.jpg) no-repeat;
+  height: 85vh;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  position: relative;
+}
+.overlay {
+  width: auto;
+  height: 85vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav .hotels {
+  color: var(--brown);
+  font-family: "Alkatra", cursive;
+}
+.overlay .herotext .hotels {
+  color: var(--brown);
+}
+section {
+  padding: 8rem 4rem;
+}
+.home .content p {
+  line-height: 2;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+nav .container .navbar-brand {
+  color: white;
+  font-size: 1.8em;
+  font-family: "Alkatra", cursive;
+}
+.navbar-light .navbar-brand {
+  color: green;
+  font-size: 20px;
+}
+.bg-dark {
+  background-color: #333 !important;
+}
+
+header .herotext {
+  font-size: 5rem;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.secondtext {
+  font-size: 3.7em;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 58%;
+  font-family: "Noto Serif Telugu", serif;
+}
+.buttons {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.btn1 {
+  color: var(--white);
+  background-color: var(--brown);
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
+.btn2 {
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
+.btn1:hover {
+  background: none;
+  color: var(--brown);
+  border: 1px solid var(--brown);
+  padding: 5px 10px;
+}
+.btn2:hover {
+  background: var(--white);
+  color: var(--black);
+  padding: 5px 10px;
+}
+.available {
+  position: absolute;
+  top: 85%;
+  left: 16%;
+  height: 130px;
+  width: 70%;
+  margin: auto;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 126px;
+  width: 150px;
+  /* margin-left: 1px; */
+  background-color: rgba(0, 0, 0, 1);
+  color: gray;
+}
+.box:hover {
+  background-color: #fff;
+  color: black;
+}
+.section .overlay .buttons {
+  position: absolute;
+  top: 73%;
+  left: 38%;
+  margin-left: 10px;
+}
+.section .overlay .button {
+  padding-left: 10px;
+}
+.section .overlay .buttons .nbtn:hover {
+  color: #333;
+}
+
+.inner-box {
+  height: 150px;
+  width: fit-content;
+  background-color: var(--white);
+  padding: 0.1rem;
+}
+.inner-box:hover {
+  transform: scale(1.11);
+}
+.about .main .inner-box .pillow img {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.about .main .inner-box .star img {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.innertext {
+  font-size: 0.9rem;
+  color: #666;
+  padding: 0rem 0.6rem;
+}
+.agency {
+  font-size: 2.6rem;
+  color: #333;
+  /* font-family: 'Alkatra', cursive; */
+  font-family: "Noto Serif Telugu", serif;
+}
+.btn3 {
+  color: var(--white);
+  background-color: var(--brown);
+  padding: 5px 12px;
+  font-size: 0.8em;
+}
+.btn3:hover {
+  background: none;
+  color: var(--brown);
+  border: 1px solid var(--brown);
+  padding: 5px 10px;
+}
+.services {
+  height: 175px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+  position: relative;
+}
+.service-boxes {
+  height: 90px;
+  width: 18%;
+  background-color: whitesmoke;
+  margin: 1rem 0rem;
+  justify-content: center;
+  display: flex;
+}
+.service-boxes:hover {
+  background-color: burlywood;
+}
+.services-circle {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 3%;
+  position: absolute;
+  top: 0%;
+  z-index: 10;
+  justify-content: center;
+  display: flex;
+}
+.car,
+.food,
+.wifi,
+.room,
+.cards {
+  font-size: 1.9em;
+  color: #ac7d30;
+}
+.services .circle-text {
+  font-size: 0.8em;
+  margin-top: 35px;
+}
+.background {
+  background: url(../images/hotel2.jpg);
+  height: 40vh;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.overlay2 {
+  width: auto;
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.overbox {
+  padding: 1rem 18rem;
+}
+.backgroundtext {
+  font-size: large;
+  color: #ac7d30;
+}
+.backgroundtext2 {
+  font-family: "Noto Serif Telugu", serif;
+  font-size: 2.4em;
+}
+.btn3 {
+  color: var(--white);
+  background-color: var(--brown);
+  padding: 10px 22px;
+  font-size: 0.9em;
+}
+.btn3:hover {
+  background: none;
+  color: var(--brown);
+  border: 1px solid var(--brown);
+  padding: 10px 22px;
+}
+.mainn {
+  padding: 4rem 0rem;
+}
+.stars {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  color: goldenrod;
+  margin-bottom: 0.8rem;
+}
+.mainn .btn4 {
+  border-radius: 10%;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  background-color: gray;
+  color: #fff;
+}
+.btn5 {
+  border-radius: 10%;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  background-color: var(--brown);
+  color: #fff;
+}
+.buttonns {
+  border-radius: 10%;
+  padding: 8px 12px;
+  font-size: 0.9em;
+  background-color: var(--brown);
+  color: #fff;
+  display: inline;
+}
+
+.mainn .buttons .btn4:hover {
+  background: none;
+  color: var(--black);
+  border: 1px solid var(--black);
+  padding: 5px 10px;
+}
+.mainn .buttons .btn5:hover {
+  background: none;
+  color: var(--black);
+  border: 1px solid var(--black);
+  padding: 5px 10px;
+}
+.resturant {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 85%;
+  padding: 2rem 7rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Main,
+.Dessert,
+.Drinks {
+  height: 6vh;
+  width: 25vh;
+  background-color: #eee;
+  margin-top: 1.5rem;
+}
+.Main:hover {
+  background-color: #ac7d30;
+}
+.Dessert:hover {
+  background-color: #ac7d30;
+}
+.Drinks:hover {
+  background-color: #ac7d30;
+}
+
+.resturant .Dessert,
+.resturant .Main,
+.resturant .Drinks,
+ul li {
+  text-decoration: none !important;
+  text-decoration-style: none;
+  color: black;
+  margin-top: 10px;
+}
+
+.resturant .Dessert,
+.resturant .Main,
+.resturant .Drinks,
+ul li a {
+  color: black;
+  text-decoration: none !important;
+}
+
+.temporarybox {
+  height: 60vh;
+  width: auto;
+  background-color: transparent;
+}
+
+/* Reviews */
+.mainn .comments {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 200px;
+  width: 27%;
+}
+.mainn .star {
+  color: #ac7d30;
+  margin-top: 20px;
+}
+
+/* EmptySpace 2 */
+.emptyspace2 {
+  height: 0.5em;
+  width: auto;
+}
+
+/* Number Counter  */
+.counter {
+  height: fit-content;
+  width: auto;
+  background-color: #222222;
+}
+
+.nums {
+  width: auto;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center !important;
+  justify-content: space-around;
+  padding-top: 2em;
+}
+
+.nums .num {
+  font-size: 40px;
+  padding: 20px;
+}
+.counter-box {
+  padding: 4rem 0rem;
+}
+.emptyspace {
+  height: 25em;
+  width: auto;
+  background-color: red;
+  margin-top: 4rem;
+}
+.counter .nums .location i,
+.counter .nums .user i,
+.counter .nums .rooms i,
+.counter .nums .guests i {
+  color: #c8c8c8;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 1.9em;
+}
+/* Blog */
+
+.emptyspace3 {
+  height: 90vh;
+  width: auto;
+}
+
+/* Gallery */
+/* .mainn .gallery{
+   display: flex;
+   padding: 10px;
+   justify-content: space-around;
+} */
+.mainn .gallery img {
+  height: 17.5em;
+  width: 17.5em;
+}
+.mainn .gallery-images {
+  margin-top: 2.2em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.gallery-images .btn6 {
+  padding: 8px 13px;
+  font-size: 1em;
+  background-color: var(--brown);
+  color: #fff;
+}
+.gallery .gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+.gallery .gallery-container .image {
+  height: 250px;
+  width: 300px;
+  border: 10px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+.gallery .gallery-container .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+.gallery .gallery-container .image:hover img {
+  transform: scale(1.1);
+}
+.gallery .popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.gallery .popup-image span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.gallery .popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+/* About Page */
+.about-header {
+  background: url(../images/About\ Us.jpg) no-repeat;
+  height: 80vh;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  position: relative;
+}
+.overlay-about {
+  height: 80vh;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.about-text {
+  font-size: 3em;
+  justify-content: center;
+  font-family: "Noto Serif Telugu", serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+}
+.about-text span {
+  font-family: "Noto Serif Telugu", serif;
+}
+/* Footer */
+footer .hotels {
+  color: #ac7d30;
+  font-family: "Alkatra", cursive;
+}
+
+/* .reviews .box-container .box{
+   background-color: var(--white);
+   text-align: center;
+   border-radius: .5rem;
+   box-shadow: var(--box-shadow);
+   padding:2rem;
+}
+
+.reviews .box-container .box img{
+   height: 10rem;
+   width: 10rem;
+   border-radius: 50%;
+}
+
+.reviews .box-container .box p{
+   padding:2rem 0;
+   line-height: 2;
+   font-size: 1.5rem;
+   color:var(--light-color);
+   margin-bottom: 0;
+}
+
+.reviews .box-container .box .stars{
+   padding:.5rem 1.5rem;
+   border-radius: .5rem;
+   background-color: var(--light-bg);
+   margin-bottom: 2rem;
+   display: inline-block;
+}
+
+.reviews .box-container .box .stars i{
+   font-size: 1.5rem;
+   color:var(--blue);
+}
+
+.reviews .box-container .box h3{
+   font-size: 2rem;
+   color:var(--black);
+}
+
+.reviews .box-container .box span{
+   color:var(--light-color);
+   font-size: 1.5rem;
+}
+
+.Guests-Carousel{
+   text-align: center;
+} */
+
+@media (max-width: 768px) {
+  .about .family-pic img {
+    width: 100%;
+    height: 14rem;
+  }
+  .innermain-about2 img {
+    width: 100%;
+    height: 14rem;
+  }
+  .about-main {
+    flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
+  }
+  .service-boxes {
+    width: 100%;
+    height: 11.5rem;
+    padding: 85px 0px;
+  }
+  section {
+    padding: auto;
+  }
+  section .counter .nums {
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* display: block; */
+  }
+  .services {
+    display: block;
+    padding: 85px 0px;
+  }
+  .nboxx {
+    display: block;
+  }
+  .resturant {
+    display: block;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .resturant .Dessert,
+  .resturant .Main,
+  .resturant .Drinks {
+    width: 20vh;
+  }
+  .navbar-collapse {
+    background: #333;
+  }
+  .nav-item {
+    margin-left: 20px;
+  }
+  nav ul li a:hover::after {
+    width: 29%;
+    transition: width 0.3s linear;
+  }
+  nav ul li a::after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: var(--brown);
+    margin: 0px;
+    display: block;
+  }
+  .mainn .gallery {
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: block;
+  }
+  .mainn {
+    padding: 0;
+  }
+  .gallery .popup-image img {
+    width: 95%;
+  }
+  Header .about-text {
+    font-size: 2rem;
+  }
+}

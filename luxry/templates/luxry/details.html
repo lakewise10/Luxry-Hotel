@@ -1,0 +1,60 @@
+{% extends 'base.html' %} {% load static %} {% block main %}
+<link rel="stylesheet" href="{%static '/css/style.css'%}" />
+
+<body style="background-color: whitesmoke">
+  <div class="container py-5">
+    <div class="row py-5 px-2">
+      <div class="col-md-6 px-4">
+        <img
+          src="{{ rooms.room_image.url }}"
+          class="card-img-top img-fluid"
+          alt="..."
+          style="height: 25rem; width: 44rem"
+        />
+      </div>
+      <div class="col-md-6">
+        <!-- <h5 class="pt-3 fs-2">{{ rooms.hotel_type |upper}}</h5> -->
+        <h5 class="pt-3 fs-2">{{ room_category}}</h5>
+        <div class="d-flex pb-1 pt-3">
+          $
+          <h2 style="color: #ac7d30">{{rooms.price}}</h2>
+          <p>/Night</p>
+        </div>
+        <p>Adults: {{rooms.Adults}}</p>
+        <p>Size: {{rooms.size}}cm</p>
+        <p>categories: {{rooms.categories}}</p>
+        <p>facilities: {{rooms.Facilities}}</p>
+        <br />
+        <div class="buttonns mb-3">
+          <button href="#" class="btn5">Book Now</button>
+        </div>
+
+        <form id="booking-form" action="" method="post">
+          <!-- Input Div -->
+          <div class="input-div">
+            <label for="check_in">Check in :</label>
+            <input type="datetime-local" id="check_in" name="check_in" />
+          </div>
+          <!-- Input Div  -->
+          <div class="input-div">
+            <label for="check_in">Check out :</label>
+            <input type="datetime-local" id="check_out" name="check_out" />
+          </div>
+          <!-- Input Div  -->
+          <div class="input-div">
+            <button type="submit">Book The Room</button>
+          </div>
+        </form>
+
+        <h2>Django Form</h2>
+        <form action="" method="post">
+          {% csrf_token %} {{form.as_p}}
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+{% endblock %}
